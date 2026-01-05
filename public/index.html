@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MFE React</title>
+
+    <link rel="stylesheet" href="mfe-shadow.css" />
+  </head>
+
+  <body>
+    <mfe-react theme="light"></mfe-react>
+
+    <script src="mfe-react.js"></script>
+    <script>
+      const el = document.querySelector("mfe-react");
+      el.context = {
+        assetBase: location.origin,
+        theme: "light",
+        locale: "pt-BR",
+        user: { id: "1" },
+        capabilities: { navigate: (to) => alert("navigate -> " + to) },
+      };
+    </script>
+  </body>
+</html>
