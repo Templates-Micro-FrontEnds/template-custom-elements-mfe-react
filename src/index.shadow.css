@@ -92,7 +92,7 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :host {
     color: #213547;
     background-color: #ffffff;
   }

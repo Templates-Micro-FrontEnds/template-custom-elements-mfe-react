@@ -14,6 +14,9 @@ export function App({ context }: { context: ShellContext | null }) {
       <Button onClick={() => context?.capabilities?.navigate?.("/angular")}>
         Ir pra /angular
       </Button>
+      <Button onClick={() => context?.capabilities?.navigate?.("/vue")}>
+        Ir pra /vue
+      </Button>
     </div>
   );
 }
