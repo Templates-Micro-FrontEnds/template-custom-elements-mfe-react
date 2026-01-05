@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import type { ShellContext } from "./element";
+import type { ShellContext } from "@templates-micro-frontends/bridge";
 
 export function App({ context }: { context: ShellContext | null }) {
   return (

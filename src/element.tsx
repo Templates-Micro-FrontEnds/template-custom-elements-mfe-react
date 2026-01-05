@@ -1,13 +1,6 @@
 import { createRoot, type Root } from "react-dom/client";
 import { App } from "./App";
-
-export type ShellContext = {
-  assetBase: string;
-  theme: "light" | "dark";
-  locale?: string;
-  user?: { id: string; name?: string };
-  capabilities?: { navigate: (to: string) => void };
-};
+import type { ShellContext } from "@templates-micro-frontends/bridge";
 
 class MfeReactElement extends HTMLElement {
   private root: Root | null = null;
