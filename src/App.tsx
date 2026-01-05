@@ -11,8 +11,8 @@ export function App({ context }: { context: ShellContext | null }) {
         {context?.theme ?? "-"}
       </div>
 
-      <Button onClick={() => context?.capabilities?.navigate?.("/settings")}>
-        Ir pra /settings
+      <Button onClick={() => context?.capabilities?.navigate?.("/angular")}>
+        Ir pra /angular
       </Button>
     </div>
   );
